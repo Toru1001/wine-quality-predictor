@@ -1,8 +1,9 @@
 import streamlit as st
 import numpy as np
 import joblib
+import xgboost
 
-model = joblib.load('wine_quality_model.pkl')
+model = joblib.load('wine_quality_model_xg.pkl')
 
 st.title("Wine Quality Predictor")
 st.write("Input the chemical properties of a wine sample to predict if it is **Good** or **Not Good**.")
